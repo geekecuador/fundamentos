@@ -5,7 +5,7 @@
  {
    int x;
  	int contador;
- 	int factorial;
+ 	int factorial; 
  	contador=1;
  	factorial=1;
  	printf("Ingrese el numero para el factorial: \n");
