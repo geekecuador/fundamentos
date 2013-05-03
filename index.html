@@ -1,54 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Fundamentos : Fundamentos de programación" />
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <title>Fundamentos</title>
+  <meta name="description" content="Fundamentos de programación">
 
-    <title>Fundamentos</title>
-  </head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <body>
+</head>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/geekecuador/fundamentos">View on GitHub</a>
+<body>
 
-          <h1 id="project_title">Fundamentos</h1>
-          <h2 id="project_tagline">Fundamentos de programación</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/geekecuador/fundamentos/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/geekecuador/fundamentos/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>*****FUNDAMENTOS DE PROGRAMACION*****</h1>
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Fundamentos</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Fundamentos de programación</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/geekecuador/fundamentos/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/geekecuador/fundamentos/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/geekecuador/fundamentos" class="code">View Fundamentos on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>*****FUNDAMENTOS DE PROGRAMACION*****</h1>
 
 <p>Fundamentos de programación
 Un repositorio, donde se alojará todo el codigo de los deberes de la materia de fundamentos de programacion.</p>
 
-<p><img src="http://360.espe.edu.ec/images/Logo%20ESPE.png" width="170" height="180" border="2" align="middle"></p>
-      </section>
+<p><img src="http://360.espe.edu.ec/images/Logo%20ESPE.png" width="170" height="80" border="2" align="middle"></p>
+
+<h1>Contribute</h1>
+
+<p>So you've got an awesome idea to throw into Jekyll. Great! Please keep the
+following in mind:</p>
+
+<ul>
+<li><strong>Contributions will not be accepted without tests.</strong></li>
+<li>If you're creating a small fix or patch to an existing feature, just a simple
+test will do. Please stay in the confines of the current test suite and use
+<a href="http://github.com/thoughtbot/shoulda/tree/master">Shoulda</a> and
+<a href="http://github.com/btakita/rr/tree/master">RR</a>.</li>
+<li>If it's a brand new feature, make sure to create a new
+<a href="https://github.com/cucumber/cucumber/">Cucumber</a> feature and reuse steps
+where appropriate. Also, whipping up some documentation in your fork's wiki
+would be appreciated, and once merged it will be transferred over to the main
+wiki.</li>
+<li>If your contribution changes any Jekyll behavior, make sure to update the
+documentation. It lives in <code>site/_posts</code>. If the docs are missing information,
+please feel free to add it in. Great docs make a great project!</li>
+<li>Please follow the <a href="https://github.com/styleguide/ruby">GitHub Ruby Styleguide</a>
+when modifying Ruby code.</li>
+</ul><h2>Test Dependencies</h2>
+
+<p>To run the test suite and build the gem you'll need to install Jekyll's
+dependencies. Jekyll uses Bundler, so a quick run of the bundle command and
+you're all set!</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Before you start, run the tests and make sure that they pass (to confirm your
+environment is configured properly):</p>
+
+<pre><code>$ rake test
+$ rake features
+</code></pre>
+
+<h2>Workflow</h2>
+
+<p>Here's the most direct way to get your work merged into the project:</p>
+
+<ul>
+<li>Fork the project.</li>
+<li>Clone down your fork ( <code>git clone git@github.com:&lt;username&gt;/jekyll.git</code> ).</li>
+<li>Create a topic branch to contain your change ( <code>git checkout -b my_awesome_feature</code> ).</li>
+<li>Hack away, add tests. Not necessarily in that order.</li>
+<li>Make sure everything still passes by running <code>rake</code>.</li>
+<li>If necessary, rebase your commits into logical chunks, without errors.</li>
+<li>Push the branch up ( <code>git push origin my_awesome_feature</code> ).</li>
+<li>Create a pull request against mojombo/jekyll and describe what your change
+does and the why you think it should be merged.</li>
+</ul><h2>Gotchas</h2>
+
+<ul>
+<li>If you want to bump the gem version, please put that in a separate commit.
+This way, the maintainers can control when the gem gets released.</li>
+<li>Try to keep your patch(es) based from the latest commit on mojombo/jekyll.
+The easier it is to apply your work, the less work the maintainers have to do,
+which is always a good thing.</li>
+<li>Please don't tag your GitHub issue with [fix], [feature], etc. The maintainers
+actively read the issues and will label it once they come across it.</li>
+</ul><h2>Finally...</h2>
+
+<p>Thanks! Hacking on Jekyll should be fun. If you find any of this hard to figure
+out, let us know so we can improve our process or documentation!</p>
+        </article>
+      </div>
     </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/geekecuador" class="avatar"><img src="https://secure.gravatar.com/avatar/56a3e95be6eb9360b6db2fedb30f4cd8?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/geekecuador">geekecuador</a> maintains <a href="https://github.com/geekecuador/fundamentos">Fundamentos</a></p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Fundamentos maintained by <a href="https://github.com/geekecuador">geekecuador</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
 
-    
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/geekecuador/fundamentos/tarball/master" class="tar">tar</a><a href="https://github.com/geekecuador/fundamentos/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
 
-  </body>
+  
+</body>
 </html>
